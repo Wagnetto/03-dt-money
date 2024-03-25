@@ -9,11 +9,8 @@ import {
 } from './styles'
 import { TransactionsContext } from '../../contexts/TransactionsContext'
 
-
-
 export function Transactions() {
-
-  const { transactions } = useContext(TransactionsContext)  
+  const { transactions } = useContext(TransactionsContext)
 
   return (
     <div>
@@ -23,12 +20,14 @@ export function Transactions() {
         <SearchForm />
         <TransactionsTable>
           <tbody>
-            {transactions.map(transaction => {
+            {transactions.map((transaction) => {
               return (
                 <tr key={transaction.id}>
                   <td width="50%">{transaction.description}</td>
                   <td>
-                    <PriceHighlight variant={transaction.type}>R$ {transaction.price}</PriceHighlight>
+                    <PriceHighlight variant={transaction.type}>
+                      R$ {transaction.price}
+                    </PriceHighlight>
                   </td>
                   <td>{transaction.category}</td>
                   <td>{transaction.createdAt}</td>
