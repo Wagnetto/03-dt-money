@@ -31,6 +31,14 @@
             "price": 184.90,
             "category": "Saúde",
             "createdAt": "2024-03-05T10:00:05.931Z"
+        },
+        {
+            "id": 5,
+            "description": "Rocketseat",
+            "type": "outcome",
+            "price": 1890,
+            "category": "Educação",
+            "createdAt": "2024-03-26T20:58:05.931Z"
         }
     ]
 }
