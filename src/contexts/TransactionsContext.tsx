@@ -64,7 +64,7 @@ export const TransactionsContextProvider = ({
 
   useEffect(() => {
     fetchTransactions()
-  }, [])
+  }, [fetchTransactions])
 
   return (
     <TransactionsContext.Provider
