@@ -23,11 +23,11 @@ interface TransactionsContextType {
   fetchTransactions: (query?: string) => Promise<void>
   createTransaction: (data: CreateTransactionInput) => Promise<void>
 }
-
-export const TransactionsContext = createContext({} as TransactionsContextType)
 interface TransactionsContextProviderProps {
   children: ReactNode
 }
+
+export const TransactionsContext = createContext({} as TransactionsContextType)
 
 export const TransactionsContextProvider = ({
   children,
